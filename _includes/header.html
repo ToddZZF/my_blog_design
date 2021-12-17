@@ -1,45 +1,44 @@
-<header>
-    <nav class="
-         flex flex-wrap
-         items-center
-         justify-between
-         w-full
-         py-4
-         md:py-0
-         px-4
-         text-lg text-gray-700
-         bg-white
-       ">
-        <div>
-            <a href="/" class="text-red-400">
-                HOME
-            </a>
-        </div>
+<!--
+    fixed top-0 z-50: 固定在最顶端&最上层（注：用 sticky 的话会与 headroom.js 有冲突）
+    flex-wrap: 允许 flex 项目换行
+    items-center: 沿着 flex 容器的交叉轴中心对齐项目
+    justify-between: 让项目沿着容器主轴排列，并使每个项目之间的距离相等（小屏幕，分散在两边）
+    md:justify-around: 让项目沿着容器主轴排列，并使每个项目两侧的距离相等（大屏幕，在中间）
+    w-full: 宽度为屏幕宽度
+    py-4: 小屏幕时上下内边距 1rem md:py-1: 大屏幕时上下内边距0.25rem;
+    px-4: 左右内边距 1rem
+    text-lg text-gray-700 bg-gray-50: 大字号、深灰色字体，背景浅灰色
+    shadow md:shadow-lg: 小屏幕小阴影，大屏幕大阴影
+-->
+<nav
+    class="fixed top-0 z-50 flex flex-wrap items-center justify-between md:justify-around w-full py-4 md:py-1 px-4 text-lg text-gray-700 bg-gray-50 shadow md:shadow-lg">
+    <!--和上面一样-->
+    <a href="/" class="flex items-center">
+        <img class="h-8 h-8 md:h-12 md:w-12 mr-2" src="http://todd.scuteee.com/style/image/logo.png">
+        <span class="text-[#ac923f] hover:text-purple-400">
+            HOME
+        </span>
+    </a>
 
-        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
-            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
 
-        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-            <ul class="
-             pt-4
-             text-base text-gray-700
-             md:flex
-             md:justify-between 
-             md:pt-0">
-                {% for item in site.data.navigation %}
-                <li>
-                    <a class="md:p-4 py-2 block hover:text-purple-400 {% if page.url==item.link %} text-red-400 {% endif %}" href="{{ item.link }}">{{- item.name -}}</a>
-                </li>
-                {% endfor %}
-                <li>
-                    <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul class="pt-4 text-base text-white-700 md:flex md:justify-between md:pt-0">
+            {% for item in site.data.navigation %}
+            <li>
+                <a class="md:p-4 py-2 block hover:text-[#ac923f] {% if page.url==item.link %} text-red-400 {% endif %}"
+                    href="{{ item.link }}">{{- item.name -}}</a>
+            </li>
+            {% endfor %}
+            <li>
+                <a class="md:p-4 py-2 block hover:text-[#ac923f] text-purple-500" href="#">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <script>
     const button = document.querySelector('#menu-button');

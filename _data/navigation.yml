@@ -1,8 +1,6 @@
 - name: Home
   link: /
-- name: Pricing
-  link: /Pricing
-- name: Customers
-  link: /Customers
-- name: Blog
-  link: /Blog
+- name: About
+  link: /about
+- name: 404
+  link: /404

@@ -29,6 +29,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Excerpt 摘要
+excerpt_separator: <!--more--> # 摘要的分隔符
+excerpt_max_num: 128 # 摘要的最大长度
+
 # Build settings
 plugins:
   - jekyll-feed
