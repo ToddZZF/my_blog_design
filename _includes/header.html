@@ -8,34 +8,47 @@
     py-4: 小屏幕时上下内边距 1rem md:py-1: 大屏幕时上下内边距0.25rem;
     px-4: 左右内边距 1rem
     text-lg text-gray-700 bg-gray-50: 大字号、深灰色字体，背景浅灰色
-    shadow md:shadow-lg: 小屏幕小阴影，大屏幕大阴影
+    shadow-lg: 阴影
 -->
-<nav
-    class="fixed top-0 z-50 flex flex-wrap items-center justify-between md:justify-around w-full py-4 md:py-1 px-4 text-lg text-gray-700 bg-gray-50 shadow md:shadow-lg">
+<nav class="fixed top-0 z-50 flex flex-wrap items-center justify-between md:justify-around w-full py-4 md:py-1 px-4 md:px-10 xl:px-20
+     text-lg text-white bg-primary border-b">
     <!--和上面一样-->
     <a href="/" class="flex items-center">
-        <img class="h-8 h-8 md:h-12 md:w-12 mr-2" src="http://todd.scuteee.com/style/image/logo.png">
-        <span class="text-[#ac923f] hover:text-purple-400">
+        <img class="h-8 w-8 md:h-12 md:w-12 mr-2" src="/assets/images/logo.png">
+        <span class="">
             HOME
         </span>
     </a>
 
+    <!--cursor-pointer: 指针移上去时变成手形-->
     <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none"
         viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
 
     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-        <ul class="pt-4 text-base text-white-700 md:flex md:justify-between md:pt-0">
+        <!--
+            pt-4: 小屏幕的上内边距为 1rem
+            md:pt-0: 大屏幕的上边距为 0rem
+            text-base：基础字号 1rem
+            text-center: 字体居中
+            flex justify-between: 大屏幕时采用 flex 布局
+        -->
+        <ul class="pt-4 text-base text-center md:flex md:justify-between md:pt-0">
+            <!--对 /_data/navigation.yml 内的项目进行遍历-->
             {% for item in site.data.navigation %}
             <li>
-                <a class="md:p-4 py-2 block hover:text-[#ac923f] {% if page.url==item.link %} text-red-400 {% endif %}"
+                <!--
+                    md:p-4: 大屏幕上内边距为 1rem
+                    py-2: 小屏幕上上下内边距为0.5rem
+                    block: 每一条 a是一个块级元素（占一行），但在 flex 容器中依然是并排的
+                    text-color: 文字颜色
+                    hover:text-color: 指针移上去时的文字颜色
+                -->
+                <a class="md:p-4 py-2 block hover:underline {% if page.url==item.link or page.category == item.name %} underline {% endif %}"
                     href="{{ item.link }}">{{- item.name -}}</a>
             </li>
             {% endfor %}
-            <li>
-                <a class="md:p-4 py-2 block hover:text-[#ac923f] text-purple-500" href="#">Sign Up</a>
-            </li>
         </ul>
     </div>
 </nav>

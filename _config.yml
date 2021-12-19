@@ -31,7 +31,7 @@ github_username:  jekyll
 
 # Excerpt 摘要
 excerpt_separator: <!--more--> # 摘要的分隔符
-excerpt_max_num: 128 # 摘要的最大长度
+excerpt_max_num: 64 # 摘要的最大长度
 
 # Build settings
 plugins:
