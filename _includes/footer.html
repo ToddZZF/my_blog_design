@@ -1,15 +1,56 @@
-<script src="{{ site.baseurl }}/assets/js/headroom.min.js"></script>
-<script type="text/javascript">
-    const option = {
-        tolerance: 50,
-        offset: 80,
-        classes: {
-            initial: "headroom",
-            pinned: "headroom--pinned",
-            unpinned: "headroom--unpinned"
-        }
-    }
-    const headroom = document.querySelector("nav");
-    const myHeadroom  = new Headroom(headroom);
-    myHeadroom.init();
-</script>
+<footer class="relative bg-primary pt-8 pb-6">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-left">
+            <div class="w-full lg:w-6/12 px-8 lg:text-right">
+                <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
+                <h5 class="text-lg mt-0 mb-2 text-gray-100">
+                    Find us on any of these platforms, we respond 1-2 business days.
+                </h5>
+                <div class="mt-6 lg:mb-0 mb-6">
+                    <button
+                        class="bg-white text-red-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none hover:animate-pulse mr-2"
+                        type="button">
+                        <i class="fab fa-twitter"></i></button>
+                    <button
+                        class="bg-white text-orange-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none hover:animate-pulse mr-2"
+                        type="button">
+                        <i class="fab fa-facebook-square"></i></button>
+                    <button
+                        class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none hover:animate-pulse mr-2"
+                        type="button">
+                        <i class="fab fa-dribbble"></i></button>
+                    <button
+                        class="bg-white text-yellow-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none hover:animate-pulse mr-2"
+                        type="button">
+                        <i class="fab fa-github"></i></button>
+                </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-8 lg:border-l-2 lg:border-white">
+                <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full mr-auto">
+                        <span class="block uppercase text-white text-base font-semibold mb-2">RECENT POSTS</span>
+                        <ul class="list-disc list-inside text-white">
+                            {% for post in site.posts limit:4 %}
+                            <li>
+                                <a class="text-white hover:text-secondary font-semibold pb-2 text-sm"
+                                    href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-blue-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-white font-semibold py-1">
+                    Copyright © {{ site.time | date: '%Y' }}<a href="https://www.creative-tim.com/product/notus-js"
+                        class="text-blue-500 hover:text-gray-800" target="_blank"> Notus JS </a> by
+                    <a href="https://www.creative-tim.com?ref=njs-profile"
+                        class="text-white hover:text-gray-800">Todd</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

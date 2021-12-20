@@ -4,17 +4,20 @@
 {% include head.html %}
 
 <!--antialiased: 字体平滑; bg-white: 背景白色-->
+
 <body class="antialiased bg-gray-50">
 
     {% include header.html %}
 
     <!--Container-->
-    <div class="relative top-16 max-w-sm sm:max-w-2xl md:max-w-4xl mx-auto">
-        {{ content }}
+    <div class="relative pt-16 max-w-sm sm:max-w-2xl md:max-w-4xl mx-auto">
+            {{ content }}
     </div>
 
     {% include footer.html %}
-    
+
 </body>
+
+{% include script.html %}
 
 </html>

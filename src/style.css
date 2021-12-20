@@ -1,5 +1,5 @@
 @tailwind base;
-@tailwind componets;
+@tailwind components;
 @tailwind utilities;
 
 .headroom {
@@ -11,4 +11,8 @@
 }
 .headroom--unpinned {
     transform: translateY(-100%);
+}
+
+.post-list-text:hover + .post-list-excerpt {
+    @apply text-white visible bg-gray-500/30 backdrop-blur-md;
 }
