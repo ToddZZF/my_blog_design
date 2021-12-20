@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: "Todd's Blog"
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -29,6 +29,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Pagination 分页
+paginate: 6
+paginate_path: "/page:num/"
+
 # Excerpt 摘要
 excerpt_separator: <!--more--> # 摘要的分隔符
 excerpt_max_num: 64 # 摘要的最大长度
@@ -36,6 +40,7 @@ excerpt_max_num: 64 # 摘要的最大长度
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
