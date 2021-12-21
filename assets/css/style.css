@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -758,11 +758,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 210 222 / var(--tw-bg-opacity));
-}
-
 .bg-teal-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
@@ -998,12 +993,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 300ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
 
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-linear {
+  transition-timing-function: linear;
 }
 
 .headroom {

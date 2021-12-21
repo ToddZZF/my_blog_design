@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Pagination 分页
-paginate: 6
+paginate: 12
 paginate_path: "/page:num/"
 
 # Excerpt 摘要
