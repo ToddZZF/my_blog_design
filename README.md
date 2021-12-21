@@ -17,3 +17,14 @@
 参考：
 
 - [notus-js](https://www.creative-tim.com/product/notus-js)
+
+## iconfont
+
+有如下一些 icon 用于社交：
+
+```
+alipay apple bilibili discord douban facebook dingding gitlab
+instagram github linkedin line messenger medium netease-cloud-music paypal
+playstation qq skype spotify taobao telegram snapchat twitter
+weibo switch wechat whatsapp xbox youtube zhihu
+```

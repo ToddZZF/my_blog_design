@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1640096947608') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alipay-line:before {
+  content: "\e759";
+}
+
+.icon-apple-line:before {
+  content: "\e75a";
+}
+
+.icon-bilibili-line:before {
+  content: "\e75d";
+}
+
+.icon-discord-line:before {
+  content: "\e75e";
+}
+
+.icon-douban-line:before {
+  content: "\e75f";
+}
+
+.icon-facebook-line:before {
+  content: "\e760";
+}
+
+.icon-dingding-line:before {
+  content: "\e761";
+}
+
+.icon-gitlab-line:before {
+  content: "\e762";
+}
+
+.icon-instagram-line:before {
+  content: "\e763";
+}
+
+.icon-github-line:before {
+  content: "\e764";
+}
+
+.icon-linkedin-line:before {
+  content: "\e765";
+}
+
+.icon-line-line:before {
+  content: "\e766";
+}
+
+.icon-messenger-line:before {
+  content: "\e767";
+}
+
+.icon-medium-line:before {
+  content: "\e768";
+}
+
+.icon-netease-cloud-music-line:before {
+  content: "\e76a";
+}
+
+.icon-paypal-line:before {
+  content: "\e76b";
+}
+
+.icon-playstation-line:before {
+  content: "\e76d";
+}
+
+.icon-qq-line:before {
+  content: "\e76e";
+}
+
+.icon-skype-line:before {
+  content: "\e76f";
+}
+
+.icon-spotify-line:before {
+  content: "\e770";
+}
+
+.icon-taobao-line:before {
+  content: "\e771";
+}
+
+.icon-telegram-line:before {
+  content: "\e772";
+}
+
+.icon-snapchat-line:before {
+  content: "\e773";
+}
+
+.icon-twitter-line:before {
+  content: "\e774";
+}
+
+.icon-weibo-line:before {
+  content: "\e776";
+}
+
+.icon-switch-line:before {
+  content: "\e775";
+}
+
+.icon-wechat-line:before {
+  content: "\e777";
+}
+
+.icon-whatsapp-line:before {
+  content: "\e778";
+}
+
+.icon-xbox-line:before {
+  content: "\e779";
+}
+
+.icon-youtube-line:before {
+  content: "\e77a";
+}
+
+.icon-zhihu-line:before {
+  content: "\e77b";
+}
+

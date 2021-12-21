@@ -60,3 +60,19 @@
         menu.classList.toggle('hidden');
     });
 </script>
+
+<script src="{{ site.baseurl }}/assets/js/headroom.min.js"></script>
+<script type="text/javascript">
+    const option = {
+        tolerance: 50,
+        offset: 80,
+        classes: {
+            initial: "headroom",
+            pinned: "headroom--pinned",
+            unpinned: "headroom--unpinned"
+        }
+    }
+    const headroom = document.querySelector("nav");
+    const myHeadroom  = new Headroom(headroom);
+    myHeadroom.init();
+</script>
