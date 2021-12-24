@@ -12,9 +12,6 @@ key: 2021-08-19-test-article
 ---
 
 
-* content
-{:toc}
-
 本文旨在介绍我的 Blog 配置，同时测试对 Markdown 的支持和显示效果。
 <!--more-->
 

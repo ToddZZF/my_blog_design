@@ -9,10 +9,6 @@ excerpt: 在设计中更好地使用字体
 mathjax: true
 ---
 
-
-* Content
-{:toc}
-
 <!--more-->
 
 我写这篇的原因是，我开始设计Jekyll主题的Markdown的CSS，其中大部分工作是设计字体，所以我查阅了一些资料，并总结成下文。

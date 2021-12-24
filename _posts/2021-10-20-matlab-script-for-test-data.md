@@ -7,9 +7,6 @@ thumbnail: /assets/images/thumbnail/matlab.png
 icon: note
 ---
 
-* Content
-{:toc}
-
 处理数据中常用的函数和脚本
 
 <!--more-->

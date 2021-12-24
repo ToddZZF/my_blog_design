@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>{{ page.title | default: site.name }}</title>
+    <meta name="description" content="{{site.meta_description}}">
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | prepend: site.baseurl }}" />
+
+    <link rel="stylesheet" href="/ppt/dist/reset.css">
+    <link rel="stylesheet" href="/ppt/dist/reveal.css">
+    <link rel="stylesheet" href="/ppt/dist/theme/white.css">
+    <link rel="stylesheet" href="/ppt/plugin/highlight/monokai.css">
+</head>
+
+<body gtools_scp_screen_capture_injected="true">
+
+    {{ content }}
+
+    <script src="/ppt/dist/reveal.js"></script>
+    <script src="/ppt/plugin/notes/notes.js"></script>
+    <script src="/ppt/plugin/markdown/markdown.js"></script>
+    <script src="/ppt/plugin/highlight/highlight.js"></script>
+    <script src="/ppt/plugin/math3/math3.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            math3: {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                    processEscapes: true,
+                    macros: {
+                        dif: '\\mathop{}\\!\\mathrm{d}',
+                        p: '\\partial',
+                        bold: '\\boldsymbol',
+                        tx: '\\text'
+                    }
+                }
+            },
+            slideNumber: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath3]
+        });
+    </script>
+</body>
+
+</html>

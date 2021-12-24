@@ -16,3 +16,109 @@
 .post-list-text:hover + .post-list-excerpt {
     @apply text-white visible bg-gray-500/30 backdrop-blur-md;
 }
+
+.markdown {
+    @apply text-base;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+.markdown h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+.markdown h2 {
+    font-size: 1.5em;
+    line-height: 1.225em;
+}
+.markdown h3 {
+    font-size: 1.3em;
+    line-height: 1.43em;
+}
+.markdown h4 {
+    font-size: 1.2em;
+}
+.markdown h5 {
+    font-size: 1em;
+}
+.markdown h6 {
+    font-size: 1em;
+    color: #999;
+}
+.markdown hr {
+    border: 1px solid #ddd;
+}
+.markdown a {
+    text-decoration: none;
+    color: #258fb8;
+}
+.markdown a:hover,
+.markdown a:active {
+    text-decoration: underline;
+}
+.markdown ul,
+.markdown ol {
+    padding-left: 2em;
+}
+.markdown .task-list {
+    padding-left: 2em;
+}
+.markdown .task-list-item {
+    padding-left: 1.6em;
+}
+.markdown .task-list-item input {
+    top: 3px;
+    left: 8px;
+}
+.markdown table {
+    vertical-align: baseline;
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    word-wrap: normal;
+    word-break: normal;
+}
+.markdown table th {
+    font-weight: bold;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 0.5em;
+    white-space: nowrap;
+}
+.markdown table td {
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+.markdown table tr {
+    border-top: 1px solid #ccc;
+}
+.markdown blockquote {
+    border-left: 5px solid #ddd;
+    padding-left: 0.5em;
+    font-family: Source Han Serif SC, serif;
+    color: #555;
+}
+.markdown blockquote blockquote {
+    padding-right: 0;
+}
+
+.markdown code,
+.markdown tt {
+    margin: 0 0.2em;
+    padding: 0 0.3em;
+    background: #263238;
+    font-family: mononoki, monospace;
+    color: #e9eded;
+}

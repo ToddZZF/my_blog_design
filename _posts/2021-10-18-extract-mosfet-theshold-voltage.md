@@ -8,9 +8,6 @@ icon: note
 mathjax: true
 ---
 
-* Content
-{:toc}
-
 一些提取阈值电压的实验方法。
 
 <!--more-->

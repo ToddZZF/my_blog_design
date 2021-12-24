@@ -7,9 +7,6 @@ thumbnail: /assets/images/thumbnail/raspberrypi.png
 icon: note
 ---
 
-* Content
-{:toc}
-
 <!--more-->
 
 ## 回顾

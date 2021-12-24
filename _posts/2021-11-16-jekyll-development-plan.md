@@ -8,9 +8,6 @@ icon: note
 excerpt: 博客的自定义
 ---
 
-* Content
-{:toc}
-
 <!--more-->
 
 ## 前言

@@ -1,6 +1,6 @@
 - name: Home
   link: /
+- name: ppt
+  link: /ppt
 - name: About
   link: /about
-- name: 404
-  link: /404

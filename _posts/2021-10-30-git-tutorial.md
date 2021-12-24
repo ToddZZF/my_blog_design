@@ -8,9 +8,6 @@ icon: note
 excerpt: 如何用git管理项目
 ---
 
-* Content
-{:toc}
-
 <!--more-->
 
 &emsp;&emsp;说来惭愧，虽然从大一开始用github，但我从没搞清楚git的用法😑，是时候解决这个问题了。

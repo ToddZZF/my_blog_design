@@ -7,9 +7,6 @@ thumbnail: /assets/images/trip/guangzhou/广州市区.jpg
 icon: note
 ---
 
-* Content
-{:toc}
-
 国庆出游计划
 <!--more-->
 

@@ -48,3 +48,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+collections:
+  my_ppt:
+    output: true
+    permalink: /:year-:month-:day/:title

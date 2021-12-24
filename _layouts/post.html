@@ -2,8 +2,30 @@
 layout: default
 ---
 
-<div class="flex justify-center items-center bg-white shadow border mx-auto max-w-4xl rounded-lg my-4 p-16 h-auto">
-    <div>
-        {{ content }}
+<div class="bg-white shadow border mx-auto rounded-lg my-4 h-auto">
+    <div
+        class="font-bold box-decoration-clone bg-gradient-to-r from-primary to-secondary text-white px-4 mb-4 rounded-t-lg">
+        <div class="text-3xl md:text-4xl py-4">
+            {{ page.title }}
+        </div>
+        <hr />
+        <div class="py-2">
+            ✒ {{ page.date | date: "%b %d, %Y" }}
+        </div>
     </div>
+    <article class="prose lg:prose-lg max-w-none px-8 py-8">
+        {{ content }}
+    </article>
 </div>
+
+{% if page.mathjax %}
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}

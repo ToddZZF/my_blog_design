@@ -7,8 +7,6 @@ thumbnail: /assets/images/thumbnail/apple_jack.png
 icon: note
 ---
 
-* Content
-{:toc}
 
 <!--more-->
 

@@ -7,9 +7,6 @@ thumbnail: /assets/images/thumbnail/rarity.png
 icon: note
 ---
 
-* Content
-{:toc}
-
 记录五所实习期间的大额支出
 <!--more-->
 

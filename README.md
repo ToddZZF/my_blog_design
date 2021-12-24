@@ -11,6 +11,8 @@
 - [Jekyll](http://jekyllrb.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Headroom.js](https://wicky.nillia.ms/headroom.js/) 滑动时隐藏header
+- [Masonry](https://masonry.desandro.com/) 图片瀑布流
+- [imagesLoaed](https://imagesloaded.desandro.com/) 判断元素中的图片是否已经加载完成，并且在加载完成后调用回调函数。
 
 ---
 

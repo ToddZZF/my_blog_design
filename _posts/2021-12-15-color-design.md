@@ -9,10 +9,6 @@ excerpt: 在设计中更好地使用颜色
 mathjax: true
 ---
 
-
-* Content
-{:toc}
-
 <!--more-->
 
 > 本文所有内容来自于：[Super Practical Guide to Color Theory, Color Models and Perfect Color Palettes \| UI Design](https://youtu.be/GyVMoejbGFg)
